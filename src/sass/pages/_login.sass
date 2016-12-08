@@ -1,0 +1,106 @@
+div#login-pop-in
+  display: none
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  z-index: 100
+  position: fixed
+  background-color: #fafafa
+  color: #4a4a4a
+  .login-container
+    @media(max-width:700px)
+      width: 80%
+  .socials
+    p
+      font-size: 1.3em
+    a
+      font-size: 1em
+      color: #458dff
+      display: block
+      margin-top: 15px
+      cursor: pointer
+      &:hover
+        text-decoration: underline
+    button
+      border: none
+      padding: 10px 20px
+      cursor: pointer
+      @media(max-width:700px)
+        margin-bottom: 15px
+        width: 80%
+    .facebook
+      border-radius: 20px
+      background-color: #3b5998
+      color: white
+    .twitter
+      border-radius: 20px
+      background-color: #55acee
+      color: white
+    .google
+      border-radius: 20px
+      background-color: #dc4e41
+      color: white
+  .title
+    font-size: 2.5em
+    b
+      color: #458dff
+  .login-box
+    p
+      font-weight: bold
+      text-align: left
+    input
+      display: block
+      font-weight: bold
+      color: black
+      border-radius: 20px
+      border: solid 2pt #474747
+      background-color: #fafafa
+      margin-top: 15px
+      padding: 10px
+    input[type="submit"]
+      padding: 10px
+      color: white
+      font-weight: normal
+      background-color: #458dff
+      border: none
+      width: 40%
+      margin-left: 50%
+      transform: translateX(-50%)
+      min-width: 150px
+    a
+      color: #458dff
+      font-size: 0.8em
+      display: block
+      margin-top: 15px
+      &:hover
+        text-decoration: underline
+  .login-container
+    position: absolute
+    margin-left: 50%
+   	margin-top: 150px
+    transform: translateX(-50%)
+    text-align: center
+    input 
+      width: 100%
+  .close
+    position: absolute
+    top: 50px
+    right: 50px
+    width: 30px
+    height: 30px
+    cursor: pointer
+    opacity: 0.5
+    transition: opacity 0.276s ease-in-out
+    &:before, &:after
+      position: absolute
+      content: ' '
+      height: 30px
+      width: 3px
+      background-color: black
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(-45deg)
+    &:hover
+      opacity: 1

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parcours numériques - Sophie Limare</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+	<link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- End CSS -->
+
+
+<!-- TODO: Dynamic data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org"
+            , "@type": "Person"
+            , "givenName": "Sophie"
+            , "familyName": "Limare"
+            , "jobTitle": "Professeur"
+            , "affiliation": "Université de Montréal"
+            , "gender": "female"
+        }
+    </script>
+
+</head>
+<body>
+    <div id="login-pop-in"></div>
+	<div id="app">
+        <div id="header">
+            <span><a href="index.html">Parcours <b>numériques</b></a></span>
+            <span class="search">
+                <input type="text" placeholder="Chercher un livre, un auteur ...">
+            </span>
+            <span class="right">
+                <a id="login" href="#">Inscription / Connexion</a>
+            </span>
+            <span class="mobile" ><a href="index.html" >P<b>n</b></a></span>
+            <span class="right right-mobile">
+                <span class="lens lens-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 28.931 28.932" style="enable-background:new 0 0 28.931 28.932;" xml:space="preserve">
+                        <path d="M28.344,25.518l-6.114-6.115c1.486-2.067,2.303-4.537,2.303-7.137c0-3.275-1.275-6.355-3.594-8.672   C18.625,1.278,15.543,0,12.266,0C8.99,0,5.909,1.275,3.593,3.594C1.277,5.909,0.001,8.99,0.001,12.266   c0,3.276,1.275,6.356,3.592,8.674c2.316,2.316,5.396,3.594,8.673,3.594c2.599,0,5.067-0.813,7.136-2.303l6.114,6.115   c0.392,0.391,0.902,0.586,1.414,0.586c0.513,0,1.024-0.195,1.414-0.586C29.125,27.564,29.125,26.299,28.344,25.518z M6.422,18.111   c-1.562-1.562-2.421-3.639-2.421-5.846S4.86,7.983,6.422,6.421c1.561-1.562,3.636-2.422,5.844-2.422s4.284,0.86,5.845,2.422   c1.562,1.562,2.422,3.638,2.422,5.845s-0.859,4.283-2.422,5.846c-1.562,1.562-3.636,2.42-5.845,2.42S7.981,19.672,6.422,18.111z" fill="#A4A4A4"/>
+                    </svg>
+                </span>
+                <a id="login" href="#">Inscription / Connexion</a>
+            </span>
+        </div>
+
+        <!-- content start -->
+        <div id="writer">
+             <div id="writer-header">
+                <a href="/index.html" class="back-link">&#8592; Retour à l'accueil</a>
+                <div class="row">
+                    <div class="col-md-4 profil">
+                        <img class="bg-profil" src="dist/assets/sophie.jpg" alt="sophie limare" />
+                        <div class="content">
+                            <figure class="profil-pic">
+                                <img src="dist/assets/profil-sophie.jpg" alt="sophie">
+                            </figure>
+                            <h1>Sophie Limare</h1>
+                            <h2>Professeur d'arts plastiques</h2>
+                            <ul class="share-links">
+                                <li><i class="fa fa-facebook fa-lg"></i></li>
+                                <li><i class="fa fa-twitter fa-lg"></i></li>
+                                <li><i class="fa fa-envelope-o fa-lg"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 bio">
+                        <div class="triangle"></div>
+                        <div class="content">
+                            <b>Sophie Limare</b> est professeur agrégée d’arts plastiques et enseigne actuellement les arts visuels à l’ESPE d’Aquitaine - Université de Bordeaux, France. Docteure en esthétique et théories de l’art, elle est membre du laboratoire CLARE-ARTES - Université de Bordeaux Montaigne. Ses principaux domaines de recherche portent sur les images instables, les détournements perspectivistes dans l’art contemporain et les relations entre image numérique et adolescence.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container writer-library">
+                <div class="top-books row">
+                    <div class="col-sm-6 col-xs-12 top-book">
+                        <div class="col-md-4 col-sm-5 col-xs-3 book-cover">
+                            <img src="http://parcoursnumeriques-pum.ca/local/cache-vignettes/L123xH186/surveiller_et_sourire_web-8640f.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 col-sm-7 col-xs-9 book-infos">
+                            <span class="book-title"><a href="book.html">Surveiller et sourire</a></span>
+                            <span class="book-desc">Les artistes visuels et le regard numérique</span>
+                            <span class="book-author">Un livre de <b><a href="writer.html">Sophie Limare</a></b></span>
+                        </div>
+                        <ul class="share-links">
+                            <li><i class="fa fa-twitter fa-lg"></i></li>
+                            <li><i class="fa fa-facebook fa-lg"></i></li>
+                            <li><i class="fa fa-pinterest fa-lg"></i></li>
+                            <li><i class="fa fa-envelope fa-lg"></i></li>
+                        </ul>
+                        <button onclick="window.location.href='reader/dist/#!/surveiller-et-sourire/chapitre/0'" class="read-btn"><i class="fa fa-book fa-lg"></i> Lire</button>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 top-book">
+                        <div class="col-md-4 col-sm-5 col-xs-3 book-cover">
+                            <img src="http://parcoursnumeriques-pum.ca/local/cache-vignettes/L123xH186/surveiller_et_sourire_web-8640f.jpg" alt="">
+                        </div>
+                        <div class="col-md-8 col-sm-7 col-xs-9 book-infos">
+                            <span class="book-title"><a href="book.html">Surveiller et sourire</a></span>
+                            <span class="book-desc">Les artistes visuels et le regard numérique</span>
+                            <span class="book-author">Un livre de <b><a href="writer.html">Sophie Limare</a></b></span>
+                        </div>
+                        <ul class="share-links">
+                            <li><i class="fa fa-twitter fa-lg"></i></li>
+                            <li><i class="fa fa-facebook fa-lg"></i></li>
+                            <li><i class="fa fa-pinterest fa-lg"></i></li>
+                            <li><i class="fa fa-envelope fa-lg"></i></li>
+                        </ul>
+                        <button onclick="window.location.href='reader/dist/#!/surveiller-et-sourire/chapitre/0'" class="read-btn"><i class="fa fa-book fa-lg"></i> Lire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content end -->
+
+        <div id="footer">
+          <div class="links-wrapper">
+            <ul class="links-footer">
+                <li><a href="./about.html">À propos<a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="social-footer">
+                <li><a href="https://twitter.com/Parcoursnumerik" target="_blank"><i class="fa fa-twitter fa-lg" ></i></a></li>
+                <li><a href="https://www.facebook.com/Collection-Parcours-num%C3%A9riques-290157791121950" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCpBR8fZ_rBW5Hh1ZCF48mnw" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+            </ul>
+          </div>
+        </div>
+ 	</div>
+
+ 	<!-- Scripts -->
+    <script src="dist/js/vendors.js"></script>
+    <script src="dist/js/app.js"></script>
+</body>
+</html>

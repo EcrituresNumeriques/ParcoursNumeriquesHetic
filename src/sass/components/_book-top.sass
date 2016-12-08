@@ -1,0 +1,82 @@
+.top-book
+  background-color:#FFFFFF
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1)
+  height: auto
+  min-height: 160px
+  padding: 15px 0 15px 0
+  margin-left: -15px
+  margin-right: 15px
+  margin-bottom: 30px
+  &:nth-child(2)
+    margin-left: 15px
+    margin-right: -15px
+  @media (max-width: 768px)
+    width: calc(100% - 15px)
+    margin-left: 7.5px
+    margin-bottom: 15px
+    &:nth-child(2)
+      margin-left: 7.5px
+      margin-right: -7.5px
+  .book-cover img
+    width: 100%
+    height: auto
+    @media(max-width: 480px)
+      min-width: 85px
+  .book-infos
+    text-align: left
+    margin-top: 15px
+    @media(max-width: 992px)
+      margin-top: 0px
+    @media(max-width: 480px)
+      padding-left: 20px
+    span
+      display: block
+      font-family: 'Lato-Regular', sans-serif
+      margin-bottom: 7px
+    .book-title
+      font-size: 24px
+      font-weight: bold
+      font-family: 'PT-Serif'
+      @media(max-width: 480px)
+        font-size: 18px
+      a:hover
+        color: #448aff
+    .book-desc
+      font-size: 16px
+      font-weight: normal
+      color: #424242
+      @media(max-width: 480px)
+        font-size: 14px
+    .book-author
+      font-size: 14px
+      color: #757575
+      @media(max-width: 480px)
+        font-size: 12px
+      b
+        color: black
+        a:hover
+          color: #448aff
+  .share-links
+    list-style-type: none
+    margin: 0
+    padding: 0
+    position: absolute
+    bottom: 15px
+    left: calc(25% + 15px)
+    @media (min-width: 768px)
+      left: calc(33.33% + 45px)
+    @media (min-width: 992px)
+      left: calc(33.33% + 15px)
+    li
+      display: inline-block
+      cursor: pointer
+      margin-right: 8px
+    i
+      color: #757575
+      transition: all .2s ease
+      &:hover
+        color: #424242
+  .read-btn
+    position: absolute
+    bottom: 15px
+    right: 15px

@@ -1,0 +1,81 @@
+$marge: 30px
+$letter-spacing: 0
+$font-size: 1.1em
+$bar-color: #ffffff
+$black: #000000
+#header 
+    position: fixed
+    z-index: 10
+    top: 0
+    left: 0
+    width: 100%
+    height: 50px
+    background-color: $bar-color
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.2)
+    font-size: $font-size
+    font-family: 'Lato', Lato, sans-serif
+    text-align: left
+    letter-spacing: $letter-spacing
+    span
+        color: #4a4a4a
+        margin-left: $marge
+        float: left
+        line-height: 50px
+        vertical-align: middle
+        a
+            color: $black
+            text-decoration: none
+        b
+            color: $main-color
+    .search 
+        input
+            border: none
+            font-size: 0.9em
+            float: left
+            width: 240px
+            height: 26px
+            margin-top: 12px
+            // margin-left: $marge
+            background: #f4f4f4 url("../assets/search.png") 12px 7px no-repeat;
+            background-size: 13px
+            border-radius: 30px
+            line-height: 27px
+            padding: 0 15px 0 33px;
+            vertical-align: middle
+            color: #6a6a6a
+            outline: none
+    .right
+        float: right
+        margin-right: $marge
+        a
+            text-decoration: none
+            color: #6a6a6a
+            font-weight: bold
+            transition: all .2s ease-in
+            &:hover
+                color:black !important
+        .lens
+            margin-right: $marge*0.7
+            margin-top: 5px
+            cursor: pointer
+            margin-left: 0px
+            &:hover
+                svg path
+                    fill: black
+            svg path
+                transition: all .2s ease-in
+    .mobile
+        display: none
+        font-size: 2em
+        margin-left: 10px
+    .right-mobile
+        display: none
+        margin-right: 10px
+        margin-left: 0px
+
+@media (max-width: 1024px)
+    #header
+        span
+            display: none
+        .mobile, .right-mobile, .lens
+            display: block
